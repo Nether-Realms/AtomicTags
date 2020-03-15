@@ -119,15 +119,15 @@ class Main extends PluginBase {
                             return true;
                 case 5: // Second button (to second page)
 
-                            if (!$player->hasPermission("tags.AlexItz16")) {
+                            if (!$player->hasPermission("tags.darealaqua")) {
                                 $player->sendMessage("§7[§c!§7]§r§c This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
-								$player->setDisplayName($player->getName() . " §r§3§l#§bAlexItz16§r");
+								$player->setDisplayName($player->getName() . " §r§3§l#§bDaRealAqua§r");
         
-								$player->sendMessage("§7[§a!§7] §r§3§l#§bAlexItz16§r§7 tag equiped!");
+								$player->sendMessage("§7[§a!§7] §r§3§l#§bDaRealAqua§r§7 tag equiped!");
                         }
                             return true;
                 case 6: // Second button (to second page)
@@ -214,7 +214,7 @@ class Main extends PluginBase {
 		
         $form->addButton($player->hasPermission("tags.uwu") === true ? "§r§5§l#§dU§5w§dU§r§7§r\n§r§a§lUNLOCKED" : "§r§5§l#§dU§5w§dU§r§7§r\n§c§lLOCKED");
 		
-        $form->addButton($player->hasPermission("tags.alexitz16") === true ? "§r§3§l#§bAlexItz16§r\n§r§a§lUNLOCKED" : "§r§3§l#§bAlexItz16§r\n§c§lLOCKED");
+        $form->addButton($player->hasPermission("tags.dare") === true ? "§r§3§l#§bDaRealAqua§r\n§r§a§lUNLOCKED" : "§r§3§l#§bDaRealAqua§r\n§c§lLOCKED");
 		
         $form->addButton($player->hasPermission("tags.og") === true ? "§r§2§l#§o§aOG§r§7§r§7§r\n§r§a§lUNLOCKED" : "§r§2§l#§o§aOG§r§7§r§7§r\n§c§lLOCKED");
 		
