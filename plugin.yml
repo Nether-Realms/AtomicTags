@@ -1,0 +1,43 @@
+name: SimpleTagsUI
+main: DaRealAqua\SimpleTagsUI\Main
+version: 1.0.0
+api: 3.6.0
+author: DaRealAqua
+commands:
+  tags:
+    description: Opens Tags Menu
+    
+permissions:
+  tags.noob:
+    description: noob Tag
+    default: true
+  tags.alien:
+    description: alien Tag
+    default: op
+  tags.bombom:
+    description: bombom Tag
+    default: op
+  tags.hacker:
+    description: hacker Tag
+    default: op
+  tags.uwu:
+    description: UwU Tag
+    default: op
+  tags.alexitz16:
+    description: alexitz16 Tag
+    default: op
+  tags.og:
+    description: OG Tag
+    default: op
+  tags.dragon:
+    description: dragon Tag
+    default: op
+  tags.nspenetwork:
+    description: nspenetwork Tag
+    default: op
+  tags.propvp:
+    description: pro Tag
+    default: op
+  tags.ed:
+    description: ed Tag
+    default: op
