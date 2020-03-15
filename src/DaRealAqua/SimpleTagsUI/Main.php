@@ -13,7 +13,8 @@ use pocketmine\command\PluginIdentifiableCommand;
 use pocketmine\utils\TextFormat;
 
 class Main extends PluginBase {
-
+    public const PREFIX = "§l§8(§dTAGS§8)§r§7 ";
+		
     public function onEnable() {
         $this->getLogger()->info(TextFormat::GREEN."SimpleTagsUI Enabled");
     }
@@ -52,7 +53,7 @@ class Main extends PluginBase {
                 case 0: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.Noob")) {
-                                $player->sendMessage("§7[§a!§7]§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
@@ -60,13 +61,13 @@ class Main extends PluginBase {
         
 								$player->setDisplayName($player->getName() . " §r§l§6#§eNoob§r");
         
-								$player->sendMessage("§7[§a!§7]§7 §r§l§6#§eNoob§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#Noob tag equiped!");
 						}
                             return true;
                 case 1: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.alien")) {
-                                $player->sendMessage("§7[§c!§7]§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
@@ -75,125 +76,125 @@ class Main extends PluginBase {
         
 								$player->setDisplayName($player->getName() . " §l§2#§aA§2l§ai§2e§an§r");
         
-								$player->sendMessage("§7[§a!§7]§7 §l§2#§aA§2l§ai§2e§an§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#Alien tag equiped!");
                         }
                             return true;
                 case 2: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.bombom")) {
-                                $player->sendMessage("§7[§c!§7]§r§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
 								$player->setDisplayName($player->getName() . " §l§4#§cBo§4mB§com§r");
         
-								$player->sendMessage("§7[§a!§7] §l§4#§cBo§4mB§com§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#BomBom tag equiped!");
                         }
                             return true;
                 case 3: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.hacker")) {
-                                $player->sendMessage("§7[§c!§7] This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
 								$player->setDisplayName($player->getName() . " §l§3#§bHa§3ck§ber§r");
         
-								$player->sendMessage("§7[§a!§7] §l§3#§bHa§3ck§ber§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#Hacker tag equiped!");
                         }
                             return true;
                 case 4: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.uwu")) {
-                                $player->sendMessage("§7[§c!§7]§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 									/*Tag Activatded*/
 								$player->setDisplayName($player->getName() . " §r§5§l#§dU§5w§dU§r");
         
-								$player->sendMessage("§7[§a!§7]§7 §r§5§l#§dU§5w§dU§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#Uwu tag equiped!");
                         }
                             return true;
                 case 5: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.darealaqua")) {
-                                $player->sendMessage("§7[§c!§7]§r§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
 								$player->setDisplayName($player->getName() . " §r§3§l#§bDaRealAqua§r");
         
-								$player->sendMessage("§7[§a!§7] §r§3§l#§bDaRealAqua§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#DaRealAqua tag equiped!");
                         }
                             return true;
                 case 6: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.og")) {
-                                $player->sendMessage("§7[§c!§7]§r§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 									/*Tag Activatded*/
 								$player->setDisplayName($player->getName() . " §r§2§l#§o§aOG§r§7§r");
         
-								$player->sendMessage("§7[§a!§7]§r§7 §r§2§l#§o§aOG§r§7§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#OGtag equiped!");
                         }
                             return true;
                 case 7: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.dragon")) {
-                                $player->sendMessage("§7[§c!§7]§r§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
 								$player->setDisplayName($player->getName() . " §r§5§l#§dDragon§r");
         
-								$player->sendMessage("§7[§a!§7] §r§5§l#§dDragon§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#Dragon tag equiped!");
                         }
                             return true;
  
                 case 8: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.nspenetwork")) {
-                                $player->sendMessage("§7[§c!§7]§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
 								$player->setDisplayName($player->getName() . " §r§l§3#§bNspeNetwork§r");
         
-								$player->sendMessage("§7[§a!§7] §r§l§3#§bNspeNetwork§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#NspeNetwork tag equiped!");
                         }
                             return true;
 				case 9: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.propvp")) {
-                                $player->sendMessage("§7[§c!§7]§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
 								$player->setDisplayName($player->getName() . " §r§l§3#§bProPvP§r");
         
-								$player->sendMessage("§7[§a!§7] §r§l§3#§bProPvP§r tag equiped!");
+								$player->sendMessage(self::PREFIX ."#ProPvP tag equiped!");
                         }
                             return true;			
 				case 10: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.ed")) {
-                                $player->sendMessage("§7[§c!§7]§c This tag is locked!");
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
 								$player->setDisplayName($player->getName() . " §r§l§5#§dE§5D§r");
         
-								$player->sendMessage("§7[§a!§7] §r§l§5#§dE§5D§r§7 tag equiped!");
+								$player->sendMessage(self::PREFIX ."#ED tag equiped!");
                         }
                             return true;
                 
