@@ -1,4 +1,5 @@
-The plugin was posted to help start servers, not to edit it because you can crash it.
+# Read this
+The plugin was posted to help start servers, don't edit the plugin if you are not a developer because you can broken the plugin and crash your server.
 You do not have the right to copyright this plugin!
 
 # Plugin Info
