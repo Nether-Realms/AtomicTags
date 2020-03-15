@@ -1,3 +1,6 @@
+The plugin was posted to help start servers, not to edit it because you can crash it.
+You do not have the right to copyright this plugin!
+
 # Plugin Info
 - Name: SimpleTagsUI
 - Author: DaRealAqua
