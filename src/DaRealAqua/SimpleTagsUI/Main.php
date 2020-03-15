@@ -34,7 +34,7 @@ class Main extends PluginBase {
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
         if ($sender instanceof Player and $command->getName() == "tags") {
-            $this->permPage($sender);
+            $this->tagsForm($sender);
         }
         return true;
     }
@@ -42,7 +42,7 @@ class Main extends PluginBase {
 
 
 
-    public function permPage(Player $player) {
+    public function tagsForm(Player $player) {
     
     	
         $form = new SimpleForm(function (Player $player, $data){
