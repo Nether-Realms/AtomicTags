@@ -15,5 +15,4 @@ You do not have the right to copyright this plugin!
 # My Server
 - IP: Play.nspe.ml
 - Port: 19132
-
 - Discord Server: https://discord.io/NspeNetwork
