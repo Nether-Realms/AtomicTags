@@ -16,10 +16,10 @@ class Main extends PluginBase {
     public const PREFIX = "§l§8(§dTAGS§8)§r§7 ";
 		
     public function onEnable() {
-        $this->getLogger()->info(TextFormat::GREEN."SimpleTagsUI Enabled");
+        $this->getLogger()->info(self::PREFIX .TextFormat::GREEN."SimpleTagsUI Enabled");
     }
     public function onDisable() {
-        $this->getLogger()->info(TextFormat::RED."SimpleTagsUI Disabled");
+        $this->getLogger()->info(self::PREFIX .TextFormat::RED."SimpleTagsUI Disabled");
     }
 
 	public function runAsOp(Player $player, String $cmd){
