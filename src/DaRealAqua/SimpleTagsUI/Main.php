@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace DaRealAqua\TagsUI;
+namespace DaRealAqua\SimpleTagsUI;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
@@ -10,14 +10,15 @@ use jojoe77777\FormAPI\SimpleForm;
 use pocketmine\command\{Command,CommandSender};
 use pocketmine\utils\Config;
 use pocketmine\command\PluginIdentifiableCommand;
+use pocketmine\utils\TextFormat;
 
 class Main extends PluginBase {
 
     public function onEnable() {
-        $this->getLogger()->info("SimpleTagsUI Enabled");
+        $this->getLogger()->info(TextFormat::GREEN."SimpleTagsUI Enabled");
     }
     public function onDisable() {
-        $this->getLogger()->info("SimpleTagsUI Disabled");
+        $this->getLogger()->info(TextFormat::RED."SimpleTagsUI Disabled");
     }
 
 	public function runAsOp(Player $player, String $cmd){
