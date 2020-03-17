@@ -5,8 +5,8 @@ You do not have the right to copyright this plugin!
 # Plugin Info
 - Name: SimpleTagsUI
 - Author: DaRealAqua
-- api: 1.0.0
-- version: 3.6.0
+- version: 1.0.0
+- api: 3.6.0
 
 # My Info
 - Discord IGN: DaRealAqua#7047
