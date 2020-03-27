@@ -2,7 +2,7 @@
 The plugin was posted to help start servers, don't edit the plugin if you are not a developer because you can broken the plugin and crash your server.
 You do not have the right to copyright this plugin!
 
-###Install FormAPI !!
+### Install FormAPI !!
 
 ### Plugin Info
 - Name: SimpleTagsUI
