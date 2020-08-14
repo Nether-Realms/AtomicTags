@@ -87,33 +87,8 @@ class Main extends PluginBase {
 								$player->sendMessage(self::PREFIX ."#Alien tag equiped!");
                         }
                             return true;
+
                 case 2: // Second button (to second page)
-
-                            if (!$player->hasPermission("tags.bombom")) {
-                                $player->sendMessage(self::PREFIX ."This tag is locked!");
-                                return true;
-                            }else{
-        
-								/*Tag Activatded*/
-								$player->setDisplayName($player->getName() . " §l§4#§cBo§4mB§com§r");
-        
-								$player->sendMessage(self::PREFIX ."#BomBom tag equiped!");
-                        }
-                            return true;
-                case 3: // Second button (to second page)
-
-                            if (!$player->hasPermission("tags.hacker")) {
-                                $player->sendMessage(self::PREFIX ."This tag is locked!");
-                                return true;
-                            }else{
-        
-								/*Tag Activatded*/
-								$player->setDisplayName($player->getName() . " §l§3#§bHa§3ck§ber§r");
-        
-								$player->sendMessage(self::PREFIX ."#Hacker tag equiped!");
-                        }
-                            return true;
-                case 4: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.uwu")) {
                                 $player->sendMessage(self::PREFIX ."This tag is locked!");
@@ -126,8 +101,7 @@ class Main extends PluginBase {
 								$player->sendMessage(self::PREFIX ."#Uwu tag equiped!");
                         }
                             return true;
-
-                case 5: // Second button (to second page)
+                case 3: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.dragon")) {
                                 $player->sendMessage(self::PREFIX ."This tag is locked!");
@@ -141,7 +115,7 @@ class Main extends PluginBase {
                         }
                             return true;
 
-				case 6: // Second button (to second page)
+		case 4: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.propvp")) {
                                 $player->sendMessage(self::PREFIX ."This tag is locked!");
@@ -153,7 +127,36 @@ class Main extends PluginBase {
         
 								$player->sendMessage(self::PREFIX ."#ProPvP tag equiped!");
                         }
-                            return true;			
+                            return true;
+                case 5: // Second button (to second page)
+
+                            if (!$player->hasPermission("tags.bombom")) {
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
+                                return true;
+                            }else{
+        
+								/*Tag Activatded*/
+								$player->setDisplayName($player->getName() . " §l§4#§cBo§4mB§com§r");
+        
+								$player->sendMessage(self::PREFIX ."#BomBom tag equiped!");
+                        }
+                            return true;
+		 case 6: // Second button (to second page)
+
+                            if (!$player->hasPermission("tags.hacker")) {
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
+                                return true;
+                            }else{
+        
+								/*Tag Activatded*/
+								$player->setDisplayName($player->getName() . " §l§3#§bHa§3ck§ber§r");
+        
+								$player->sendMessage(self::PREFIX ."#Hacker tag equiped!");
+                        }
+                            return true;
+
+
+			
                     
             }
 	}
@@ -161,23 +164,14 @@ class Main extends PluginBase {
         );
         $form->setTitle("§b§lTags");
         $form->setContent("Show off your chat tags!");
-		
         		
 	$form->addButton($player->hasPermission("tags.atomic") === true ? "§r§l§6#§eAtomic§r\n§r§a§lUNLOCKED" : "§r§l§3#§r§l§6#§eAtomic§r\n§c§lLOCKED");
-	    
 	$form->addButton($player->hasPermission("tags.alien") === true ? "§l§2#§aA§2l§ai§2e§an§r§7§r\n§a§lUNLOCKED" : "§l§2#§aA§2l§ai§2e§an§r§7§r\n§c§lLOCKED");
-		
-        $form->addButton($player->hasPermission("tags.bombom") === true ? "§l§4#§cBo§4mB§com§r§7§r\n§r§a§lUNLOCKED" : "§l§4#§cBo§4mB§com§r§7§r\n§c§lLOCKED");
-		
-	$form->addButton($player->hasPermission("tags.hacker") === true ? "§l§3#§bHa§3ck§ber§r§7§r\n§r§a§lUNLOCKED" : "§l§3#§bHa§3ck§ber§r§7§r\n§c§lLOCKED"); 
-		
         $form->addButton($player->hasPermission("tags.uwu") === true ? "§r§5§l#§dU§5w§dU§r§7§r\n§r§a§lUNLOCKED" : "§r§5§l#§dU§5w§dU§r§7§r\n§c§lLOCKED");
-		
         $form->addButton($player->hasPermission("tags.dragon") === true ? "§r§5§l#§dDragon§r§7§r\n§r§a§lUNLOCKED" : "§r§5§l#§dDragon§r§7§r\n§c§lLOCKED");
-		
-	$form->addButton($player->hasPermission("tags.propvp") === true ? "§r§l§3#§bProPvP§r\n§r§a§lUNLOCKED" : "§r§l§3#§bProPvP§r\n§c§lLOCKED");
-		
-	           
+ 	$form->addButton($player->hasPermission("tags.propvp") === true ? "§r§l§3#§bProPvP§r\n§r§a§lUNLOCKED" : "§r§l§3#§bProPvP§r\n§c§lLOCKED");
+	$form->addButton($player->hasPermission("tags.bombom") === true ? "§l§4#§cBo§4mB§com§r§7§r\n§r§a§lUNLOCKED" : "§l§4#§cBo§4mB§com§r§7§r\n§c§lLOCKED");
+	$form->addButton($player->hasPermission("tags.hacker") === true ? "§l§3#§bHa§3ck§ber§r§7§r\n§r§a§lUNLOCKED" : "§l§3#§bHa§3ck§ber§r§7§r\n§c§lLOCKED"); 
         
         $form->addButton("§c§lClose");
         $form->sendToPlayer($player);
