@@ -1,8 +1,8 @@
-name: SimpleTagsUI
+name: AtomicTags
 main: DaRealAqua\SimpleTagsUI\Main
 version: 1.0.0
 api: 3.6.0
-author: DaRealAqua
+author: Based on DaRealAqua's SimpleTagsUI. Forked by YoYo.
 commands:
   tags:
     description: Opens Tags Menu
