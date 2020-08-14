@@ -70,7 +70,7 @@ class Main extends PluginBase {
         
 								$player->sendMessage(self::PREFIX ."#Atomic tag equiped!");
                         }
-                        }
+                        // }
                             return true;
 		  case 1: // Second button (to second page)
 
