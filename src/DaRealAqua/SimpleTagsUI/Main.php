@@ -202,6 +202,20 @@ class Main extends PluginBase {
 								$player->setDisplayName($player->getName() . " §r§l§5#§dE§5D§r");
         
 								$player->sendMessage(self::PREFIX ."#ED tag equiped!");
+		       }
+                            return true;			
+				case 11: // Second button (to second page)
+
+                            if (!$player->hasPermission("tags.atomic")) {
+                                $player->sendMessage(self::PREFIX ."This tag is locked!");
+                                return true;
+                            }else{
+        
+								/*Tag Activatded*/
+								$player->setDisplayName($player->getName() . " §r§l§5#§6Atomic§r");
+        
+								$player->sendMessage(self::PREFIX ."#Atomic tag equiped!");
+                        }
                         }
                             return true;
                 
