@@ -8,8 +8,8 @@ commands:
     description: Opens Tags Menu
     
 permissions:
-  tags.noob:
-    description: noob Tag
+  tags.atomic:
+    description: atomic Tag
     default: op
   tags.alien:
     description: alien Tag
@@ -40,7 +40,4 @@ permissions:
     default: op
   tags.ed:
     description: ed Tag
-    default: op
-  tags.atomic:
-    description: Atomic Tag
     default: op
