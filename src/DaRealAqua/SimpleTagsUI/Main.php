@@ -57,21 +57,22 @@ class Main extends PluginBase {
                 return;
             }
             switch ($data) {
-                case 0: // Second button (to second page)
+                
+               case 0: // Second button (to second page)
 
-                            if (!$player->hasPermission("tags.Noob")) {
+                            if (!$player->hasPermission("tags.atomic")) {
                                 $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
+								$player->setDisplayName($player->getName() . " §r§l§6#§eAtomic§r");
         
-								$player->setDisplayName($player->getName() . " §r§l§6#§eNoob§r");
-        
-								$player->sendMessage(self::PREFIX ."#Noob tag equiped!");
-						}
+								$player->sendMessage(self::PREFIX ."#Atomic tag equiped!");
+                        }
+                        }
                             return true;
-                case 1: // Second button (to second page)
+		  case 1: // Second button (to second page)
 
                             if (!$player->hasPermission("tags.alien")) {
                                 $player->sendMessage(self::PREFIX ."This tag is locked!");
@@ -204,35 +205,23 @@ class Main extends PluginBase {
 								$player->sendMessage(self::PREFIX ."#ED tag equiped!");
 		       }
                             return true;			
-				case 11: // Second button (to second page)
-
-                            if (!$player->hasPermission("tags.atomic")) {
-                                $player->sendMessage(self::PREFIX ."This tag is locked!");
-                                return true;
-                            }else{
-        
-								/*Tag Activatded*/
-								$player->setDisplayName($player->getName() . " §r§l§6#§eAtomic§r");
-        
-								$player->sendMessage(self::PREFIX ."#Atomic tag equiped!");
-                        }
-                        }
-                            return true;
+				
                 
                     
             }
            
         );
         $form->setTitle("§b§lTags");
-        $form->setContent("§7Unlock tags from crates");
+        $form->setContent("Show off your chat tags!");
 		
-        $form->addButton($player->hasPermission("tags.noob") === true ? "§r§l§6#§eNoob§r\n§a§lUNLOCKED" : "§r§l§6#§eNoob§r\n§c§lLOCKED"); 
-		
-		$form->addButton($player->hasPermission("tags.alien") === true ? "§l§2#§aA§2l§ai§2e§an§r§7§r\n§a§lUNLOCKED" : "§l§2#§aA§2l§ai§2e§an§r§7§r\n§c§lLOCKED");
+        		
+	$form->addButton($player->hasPermission("tags.atomic") === true ? "§r§l§6#§eAtomic§r\n§r§a§lUNLOCKED" : "§r§l§3#§r§l§6#§eAtomic§r\n§c§lLOCKED");
+	    
+	$form->addButton($player->hasPermission("tags.alien") === true ? "§l§2#§aA§2l§ai§2e§an§r§7§r\n§a§lUNLOCKED" : "§l§2#§aA§2l§ai§2e§an§r§7§r\n§c§lLOCKED");
 		
         $form->addButton($player->hasPermission("tags.bombom") === true ? "§l§4#§cBo§4mB§com§r§7§r\n§r§a§lUNLOCKED" : "§l§4#§cBo§4mB§com§r§7§r\n§c§lLOCKED");
 		
-		$form->addButton($player->hasPermission("tags.hacker") === true ? "§l§3#§bHa§3ck§ber§r§7§r\n§r§a§lUNLOCKED" : "§l§3#§bHa§3ck§ber§r§7§r\n§c§lLOCKED"); 
+	$form->addButton($player->hasPermission("tags.hacker") === true ? "§l§3#§bHa§3ck§ber§r§7§r\n§r§a§lUNLOCKED" : "§l§3#§bHa§3ck§ber§r§7§r\n§c§lLOCKED"); 
 		
         $form->addButton($player->hasPermission("tags.uwu") === true ? "§r§5§l#§dU§5w§dU§r§7§r\n§r§a§lUNLOCKED" : "§r§5§l#§dU§5w§dU§r§7§r\n§c§lLOCKED");
 		
@@ -244,12 +233,10 @@ class Main extends PluginBase {
 
         $form->addButton($player->hasPermission("tags.nspenetwork") === true ? "§r§l§3#§bNspeNetwork§r\n§r§a§lUNLOCKED" : "§r§l§3#§bNspeNetwork§r\n§c§lLOCKED");
 		
-		$form->addButton($player->hasPermission("tags.propvp") === true ? "§r§l§3#§bProPvP§r\n§r§a§lUNLOCKED" : "§r§l§3#§bProPvP§r\n§c§lLOCKED");
+	$form->addButton($player->hasPermission("tags.propvp") === true ? "§r§l§3#§bProPvP§r\n§r§a§lUNLOCKED" : "§r§l§3#§bProPvP§r\n§c§lLOCKED");
 		
-		$form->addButton($player->hasPermission("tags.ed") === true ? "§r§l§5#§dE§5D§r\n§r§a§lUNLOCKED" : "§r§l§5#§dE§5D§r\n§c§lLOCKED");
-	    
-	        $form->addButton($player->hasPermission("tags.atomic") === true ? "§r§l§6#§eAtomic§r\n§r§a§lUNLOCKED" : "§r§l§3#§r§l§6#§eAtomic§r\n§c§lLOCKED");
-        
+	$form->addButton($player->hasPermission("tags.ed") === true ? "§r§l§5#§dE§5D§r\n§r§a§lUNLOCKED" : "§r§l§5#§dE§5D§r\n§c§lLOCKED");
+	           
         
         $form->addButton("§c§lClose");
         $form->sendToPlayer($player);
