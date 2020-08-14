@@ -209,6 +209,7 @@ class Main extends PluginBase {
                 
                     
             }
+	}
            
         );
         $form->setTitle("§b§lTags");
