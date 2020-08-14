@@ -221,7 +221,7 @@ class Main extends PluginBase {
                 
                     
             }
-            }
+           
         );
         $form->setTitle("§b§lTags");
         $form->setContent("§7Unlock tags from crates");
