@@ -248,7 +248,7 @@ class Main extends PluginBase {
 		
 		$form->addButton($player->hasPermission("tags.ed") === true ? "§r§l§5#§dE§5D§r\n§r§a§lUNLOCKED" : "§r§l§5#§dE§5D§r\n§c§lLOCKED");
 	    
-	        $form->addButton($player->hasPermission("tags.atomic") === true ? "§r§3§6#§eAtomic§r\n§r§a§lUNLOCKED" : "§r§l§3#§r§l§6#§eAtomic§r\n§c§lLOCKED");
+	        $form->addButton($player->hasPermission("tags.atomic") === true ? "§r§l§6#§eAtomic§r\n§r§a§lUNLOCKED" : "§r§l§3#§r§l§6#§eAtomic§r\n§c§lLOCKED");
         
         
         $form->addButton("§c§lClose");
