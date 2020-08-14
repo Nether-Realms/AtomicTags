@@ -23,21 +23,10 @@ permissions:
   tags.uwu:
     description: UwU Tag
     default: op
-  tags.alexitz16:
-    description: alexitz16 Tag
-    default: op
-  tags.og:
-    description: OG Tag
-    default: op
   tags.dragon:
     description: dragon Tag
-    default: op
-  tags.nspenetwork:
-    description: nspenetwork Tag
     default: op
   tags.propvp:
     description: pro Tag
     default: op
-  tags.ed:
-    description: ed Tag
-    default: op
+  
