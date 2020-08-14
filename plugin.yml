@@ -10,7 +10,7 @@ commands:
 permissions:
   tags.noob:
     description: noob Tag
-    default: true
+    default: op
   tags.alien:
     description: alien Tag
     default: op
@@ -40,4 +40,7 @@ permissions:
     default: op
   tags.ed:
     description: ed Tag
+    default: op
+  tags.atomic:
+    description: Atomic Tag
     default: op
