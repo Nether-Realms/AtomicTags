@@ -23,10 +23,10 @@ class Main extends PluginBase {
     public const PREFIX = "§l§8(§dATMCTAGS§8)§r§7 ";
 		
     public function onEnable() {
-        $this->getLogger()->info(self::PREFIX .TextFormat::GREEN."AtomicTagsUI Enabled");
+        $this->getLogger()->info(self::PREFIX .TextFormat::GREEN."TagsUI Enabled");
     }
     public function onDisable() {
-        $this->getLogger()->info(self::PREFIX .TextFormat::RED."AtomicTagsUI Disabled");
+        $this->getLogger()->info(self::PREFIX .TextFormat::RED."TagsUI Disabled");
     }
 
 	public function runAsOp(Player $player, String $cmd){
@@ -60,15 +60,15 @@ class Main extends PluginBase {
                 
                case 0: // Second button (to second page)
 
-                            if (!$player->hasPermission("tags.atomic")) {
+                            if (!$player->hasPermission("tags.venity")) {
                                 $player->sendMessage(self::PREFIX ."This tag is locked!");
                                 return true;
                             }else{
         
 								/*Tag Activatded*/
-								$player->setDisplayName($player->getName() . " §r§l§6#§eAtomic§r");
+								$player->setDisplayName($player->getName() . " §r§l§6#§eVenity§r");
         
-								$player->sendMessage(self::PREFIX ."#Atomic tag equiped!");
+								$player->sendMessage(self::PREFIX ."#Venity tag equiped!");
                         }
                         // }
                             return true;
@@ -165,7 +165,7 @@ class Main extends PluginBase {
         $form->setTitle("§b§lTags");
         $form->setContent("Show off your chat tags!");
         		
-	$form->addButton($player->hasPermission("tags.atomic") === true ? "§r§l§6#§eAtomic§r\n§r§a§lUNLOCKED" : "§r§l§3#§r§l§6#§eAtomic§r\n§c§lLOCKED");
+	$form->addButton($player->hasPermission("tags.venity") === true ? "§r§l§6#§eVenity§r\n§r§a§lUNLOCKED" : "§r§l§3#§r§l§6#§eVenity§r\n§c§lLOCKED");
 	$form->addButton($player->hasPermission("tags.alien") === true ? "§l§2#§aA§2l§ai§2e§an§r§7§r\n§a§lUNLOCKED" : "§l§2#§aA§2l§ai§2e§an§r§7§r\n§c§lLOCKED");
         $form->addButton($player->hasPermission("tags.uwu") === true ? "§r§5§l#§dU§5w§dU§r§7§r\n§r§a§lUNLOCKED" : "§r§5§l#§dU§5w§dU§r§7§r\n§c§lLOCKED");
         $form->addButton($player->hasPermission("tags.dragon") === true ? "§r§5§l#§dDragon§r§7§r\n§r§a§lUNLOCKED" : "§r§5§l#§dDragon§r§7§r\n§c§lLOCKED");
