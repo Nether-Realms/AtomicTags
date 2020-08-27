@@ -8,8 +8,8 @@ commands:
     description: Opens Tags Menu
     
 permissions:
-  tags.atomic:
-    description: atomic Tag
+  tags.venity:
+    description: venity Tag
     default: op
   tags.alien:
     description: alien Tag
